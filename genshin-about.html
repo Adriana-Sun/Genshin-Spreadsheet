@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+	<!--Importing fonts from Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="genshin-imgs/Icon_Paimon_Menu.png">
+    
+	<!--Connecting the CSS and JS files-->
+	<link href="styles/general-style.css" rel="stylesheet" />
+    
+	  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Genshin Spreadsheet</title>
+
+    <style>
+        .about{
+            display: flex;
+            flex-flow: row wrap;
+            
+            padding: 5px;
+            margin: 80px 10px 10px 10px;
+        }
+        .abtText{
+            background-color: var(--mainBg);
+            border-radius: 5px;
+            border: 2px solid var(--mainText);
+
+            font-size: 24px;
+            padding: 5px;
+            margin: 10px;
+        }
+        #abtImg{
+            width: 400px;
+        }
+        #abtHeader{
+            flex: 1 200px;
+            background-color: var(--subAccent);
+            color: var(--mainBg);
+            border-color: var(--mainBg);
+        }
+        #abtMain{
+            flex: 2 200px;
+        }
+    </style>
+
+  </head>
+  
+<body>
+  <nav class="topBar">
+    <ul>
+      <li><img src="genshin-imgs/Icon_Paimon_Menu.png" id="logo"></li>
+      <li><img src="genshin-imgs/genshin-impact-logo.png" id="gLogo"></li>
+      <div class="mainLinks">
+        <li><a href="genshin-sheet.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="genshin-about.html" class="active">About</a></li>
+      </div>
+    </ul>
+  </nav>
+  
+  <div class="about">
+    <article class="abtText" id="abtHeader">
+        <p>About the Creator!</p>
+        <img src="genshin-imgs/abt_transp.PNG" id="abtImg">
+    </article>
+    <article class="abtText" id="abtMain">
+        <p>hades is hot. so is yesod but he's my depressed little babygirl shhhh</p>
+    </article>
+  </div>
+  
+</body>
+<script src="scripts/about-script.js"></script>
+</html>
